@@ -131,10 +131,12 @@ void solve(int x1,int y1,int x2,int y2,int x3,int y3,int x4,int y4,int z1,int z2
 int main()
 {
 	freopen("in.txt","r",stdin);
-	int x1,y1,x2,y2,x3,y3,x4,y4,z1,z2,t=1;
-	double  a,b,c,d,e,f,g,h;
+	int x1,y1,x2,y2,x3,y3,x4,y4,z1,z2;
+	double  a,b,c,d,e,f,g,h,t=1;
 	cin>>a>>e>>b>>f>>c>>g>>d>>h;
-	cin>>t;
+	cin>>t;	
+	int k;
+	cin>>k; 
 	z1=a/1;
 	x1=(a-z1)*1000000;
 	x2=(b-z1)*1000000;
@@ -147,7 +149,8 @@ int main()
 	y3=(g-z2)*1000000;
 	y4=(h-z2)*1000000;
 	Sleep(10000); 
-	while(1)
+
+	while(k--)
 	{
 		solve(x1,y1,x2,y2,x3,y3,x4,y4,z1,z2,t) ;
 	}
